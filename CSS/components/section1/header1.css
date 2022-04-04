@@ -1,0 +1,70 @@
+.header1
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px 0px 15px 0px;
+    background-color: var(--white2);
+    box-shadow: 0px 0px 5px var(--black);
+}
+.rightheader1
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    margin: 0px;
+    margin-right: 20px;
+}
+.aheader
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--black);
+    font-weight: 600;
+    cursor: pointer;
+}
+.logo
+{
+    margin: 0px;
+    margin-left: 20px;
+    font-size: 35px;
+    color: mediumblue;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    text-shadow: 0px 0px 3px #00AA6D;
+}
+.settings
+{
+    color: var(--black);
+    font-size: 38px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+.sun.active
+{
+    display: none;
+}
+.sun
+{
+    font-size: 38px;
+    color: var(--black);
+    margin: 0px;
+}
+.moon
+{
+    font-size: 38px;
+    color: var(--black);
+    margin: 0px;
+}
+.moon.active
+{
+    display: none;
+}
+.daynight
+{
+    margin: 0px;
+    cursor: pointer;
+}

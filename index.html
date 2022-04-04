@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Download</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/components/loadingwindow.css">
+    <link rel="stylesheet" href="CSS/components/sections.css">
+    <link rel="stylesheet" href="CSS/components/section1/header1.css">
+    <link rel="stylesheet" href="CSS/components/section1/section1.css">
+    <link rel="stylesheet" href="CSS/components/section2/section2.css">
+    <link rel="stylesheet" href="CSS/components/section2/cardmusic.css">
+</head>
+<body>
+    <section class="loadwindow">
+        <div id="loadtxt">Loading.</div>
+        <div class="loading">
+            <div class="circleflx1"><div class="circle1"></div><div class="circle2"></div></div>
+            <div class="circleflx1"><div class="circle3"></div><div class="circle4"></div></div>
+        </div>
+    </section>
+    <section class="section1">
+        <header class="header1">
+            <h1 class="logo">Awari Downloader</h1>
+            <div class="rightheader1">
+                <a class="aheader" href="#">Musics</a>
+                <a class="aheader" href="#">Playlists</a>
+                <a class="aheader" href="#">Contact</a>
+                <div class="daynight">
+                    <ion-icon class="moon" name="moon-outline"></ion-icon>
+                    <ion-icon class="sun active" name="sunny-outline"></ion-icon>
+                </div>
+                <ion-icon class="settings" name="settings-outline"></ion-icon>
+            </div>
+        </header>
+        <div class="searchsection">
+            <h2 class="h2sc1">Music Download</h2>
+            <p class="sc1p1">Exclusive site for downloading high quality music.</p>
+            <div class="searchdiv">
+                <ion-icon class="searchicon" name="search-sharp"></ion-icon>
+                <input placeholder="Pesquisar" type="search" name="" id="searchinput">
+            </div>
+            <nav class="musicstyles">
+                <a class="style" href="">Músicas Eletrônicas</a>
+                <a class="style" href="">Músicas sem Copyright</a>
+                <a class="style" href="">Músicas Tristes</a>
+                <a class="style" href="">Nightcore</a>
+                <a class="style" href="">PHONK</a>
+                <a class="style" href="">Trap</a>
+                <a class="style" href="">Hip Hop</a>
+            </nav>
+        </div>
+    </section>
+    <section class="section2">
+        <article class="filterbutton">
+            <ion-icon class="filtericon" name="options-outline"></ion-icon>
+            <h2 class="sc2h2">Filter</h2>
+        </article>
+        <div class="aleatorymusics">
+
+            <article class="cardmusic1">
+                <div class="cardmusic1right">
+                    <div class="playpause" id="playpause1">
+                        <ion-icon class="playmusic" id="playmusic1" name="play"></ion-icon>
+                        <ion-icon class="pausemusic active" id="pausemusic1" name="pause"></ion-icon>
+                    </div>
+                    <img class="musiccapa" src="https://i.ytimg.com/vi/ebXbLfLACGM/mqdefault.jpg" alt="">
+                    <dl>
+                        <dt class="musicname">Summer</dt>
+                        <dd class="cantor">Calvin Harris</dd>
+                    </dl>
+                </div>
+                <ion-icon id="backmusic1" class="forwardbackmusic" name="play-back"></ion-icon>
+                <div id="barr1" class="barr">
+                    <div id="duration1" class="duration"></div>
+                </div>
+                <ion-icon id="forwardmusic1" class="forwardbackmusic" name="play-forward"></ion-icon>
+                <div class="cardmusic1left">
+                    <p class="musictime">03:53</p>
+                    <a class="downloadmusic" href="https://ve39.aadika.xyz/download/ebXbLfLACGM/mp3/320/1649018542/bffd5b866b83dc6b2a9e88024658c48229ac998e3f8656c98e0541607d01566b/1?f=y2meta.com" rel="nofollow">Download</a>
+                    <ion-icon onclick="share()" class="share" name="share-social-outline"></ion-icon>
+                </div>
+            </article>
+
+            <article class="cardmusic1">
+                <div class="cardmusic1right">
+                    <div class="playpause" id="playpause2">
+                        <ion-icon class="playmusic" id="playmusic2" name="play"></ion-icon>
+                        <ion-icon class="pausemusic active" id="pausemusic2" name="pause"></ion-icon>
+                    </div>
+                    <img class="musiccapa" src="https://i.ytimg.com/vi/PT2_F-1esPk/mqdefault.jpg" alt="">
+                    <dl>
+                        <dt class="musicname">Closer</dt>
+                        <dd class="cantor">Chainsmokers</dd>
+                    </dl>
+                </div>
+                <ion-icon id="backmusic2" class="forwardbackmusic" name="play-back"></ion-icon>
+                <div id="barr2" class="barr">
+                    <div id="duration2" class="duration"></div>
+                </div>
+                <ion-icon id="forwardmusic2" class="forwardbackmusic" name="play-forward"></ion-icon>
+                <div class="cardmusic1left">
+                    <p class="musictime">04:21</p>
+                    <a class="downloadmusic" href="https://ve30.aadika.xyz/download/PT2_F-1esPk/mp3/320/1649041943/72f9cbd052dd653d12fef84d0b42f788182da469fb20245087ecfa46050a8504/1?f=y2meta.com" rel="nofollow">Download</a>
+                    <ion-icon onclick="share()" class="share" name="share-social-outline"></ion-icon>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    
+    <audio id="music1" src="assets/audio/y2meta.com - Calvin Harris - Summer (Official Video) (320 kbps).mp3" preload="auto"></audio>
+    <audio id="music2" src="assets/audio/y2meta.com - The Chainsmokers - Closer (Lyric) ft. Halsey (320 kbps).mp3" preload="auto"></audio>    
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="JS/animation.js"></script>
+    <script src="JS/script.js"></script>
+</body>
+</html>
