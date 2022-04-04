@@ -13,6 +13,11 @@ var duration3 = document.getElementById('duration3')
 var music3 = document.getElementById('music3')
 var forwardmusic3 = document.getElementById('forwardmusic3')
 var backmusic3 = document.getElementById('backmusic3')
+var barr4 = document.getElementById('barr4')
+var duration4 = document.getElementById('duration4')
+var music4 = document.getElementById('music4')
+var forwardmusic4 = document.getElementById('forwardmusic4')
+var backmusic4 = document.getElementById('backmusic4')
 
 backmusic1.onclick = function () {
     music1.currentTime = music1.currentTime -15.0
@@ -38,6 +43,14 @@ forwardmusic3.onclick = function () {
     music3.currentTime = music3.currentTime +15.0
 }
 
+backmusic4.onclick = function () {
+    music4.currentTime = music4.currentTime -15.0
+}
+
+forwardmusic4.onclick = function () {
+    music4.currentTime = music4.currentTime +15.0
+}
+
 window.addEventListener("load", function () {
     setInterval(() => {
         var resultado1 = (345*music1.currentTime)/music1.duration;
@@ -50,5 +63,9 @@ window.addEventListener("load", function () {
     setInterval(() => {
         var resultado3 = (345*music3.currentTime)/music3.duration;
         duration3.style.width = parseInt(resultado3)+'px';
+    }, 500);
+    setInterval(() => {
+        var resultado4 = (345*music4.currentTime)/music4.duration;
+        duration4.style.width = parseInt(resultado4)+'px';
     }, 500);
 })
