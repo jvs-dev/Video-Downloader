@@ -12,6 +12,10 @@ var playpause2 = document.getElementById('playpause2')
 var playmusic2 = document.getElementById('playmusic2')
 var pausemusic2 = document.getElementById('pausemusic2')
 var music2 = document.getElementById('music2')
+var playpause3 = document.getElementById('playpause3')
+var playmusic3 = document.getElementById('playmusic3')
+var pausemusic3 = document.getElementById('pausemusic3')
+var music3 = document.getElementById('music3')
 
 if (localStorage.dark == 1) {
     moon.classList.toggle('active')
@@ -41,6 +45,17 @@ playpause2.onclick = function () {
     }
 }
 
+playpause3.onclick = function () {
+    playmusic3.classList.toggle('active')
+    pausemusic3.classList.toggle('active')
+    if (playmusic3.classList.contains('active')) {
+        music3.play()
+    }
+    if (pausemusic3.classList.contains('active')) {
+        music3.pause()
+    }
+}
+
 daynight.onclick = function () {
     moon.classList.toggle('active')
     sun.classList.toggle('active')
@@ -64,6 +79,12 @@ setInterval(() => {
         playmusic2.classList.toggle('active')
         pausemusic2.classList.toggle('active')
         music2.currentTime = 0.0
+    }
+
+    if (music3.currentTime == music3.duration) {
+        playmusic3.classList.toggle('active')
+        pausemusic3.classList.toggle('active')
+        music3.currentTime = 0.0
     }
 
     if (loadwindow.classList.contains('loaded') == false) {
