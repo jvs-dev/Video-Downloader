@@ -32,6 +32,9 @@ playpause1.onclick = function () {
     pausemusic1.classList.toggle('active')
     if (playmusic1.classList.contains('active')) {
         music1.play()
+        music2.pause()
+        music3.pause()
+        music4.pause()
     }
     if (pausemusic1.classList.contains('active')) {
         music1.pause()
@@ -43,6 +46,9 @@ playpause2.onclick = function () {
     pausemusic2.classList.toggle('active')
     if (playmusic2.classList.contains('active')) {
         music2.play()
+        music1.pause()
+        music3.pause()
+        music4.pause()
     }
     if (pausemusic2.classList.contains('active')) {
         music2.pause()
@@ -54,6 +60,9 @@ playpause3.onclick = function () {
     pausemusic3.classList.toggle('active')
     if (playmusic3.classList.contains('active')) {
         music3.play()
+        music2.pause()
+        music1.pause()
+        music4.pause()
     }
     if (pausemusic3.classList.contains('active')) {
         music3.pause()
@@ -65,6 +74,9 @@ playpause4.onclick = function () {
     pausemusic4.classList.toggle('active')
     if (playmusic4.classList.contains('active')) {
         music4.play()
+        music2.pause()
+        music3.pause()
+        music1.pause()
     }
     if (pausemusic4.classList.contains('active')) {
         music4.pause()
