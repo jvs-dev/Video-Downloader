@@ -24,6 +24,11 @@ var playpause5 = document.getElementById('playpause5')
 var playmusic5 = document.getElementById('playmusic5')
 var pausemusic5 = document.getElementById('pausemusic5')
 var music5 = document.getElementById('music5')
+var playpause6 = document.getElementById('playpause6')
+var playmusic6 = document.getElementById('playmusic6')
+var pausemusic6 = document.getElementById('pausemusic6')
+var music6 = document.getElementById('music6')
+
 
 if (localStorage.dark == 1) {
     moon.classList.toggle('active')
@@ -40,6 +45,7 @@ playpause1.onclick = function () {
         music3.pause()
         music4.pause()
         music5.pause()
+        music6.pause()
         playmusic2.classList.remove('active')
         pausemusic2.classList.add('active')
         playmusic3.classList.remove('active')
@@ -48,6 +54,8 @@ playpause1.onclick = function () {
         pausemusic4.classList.add('active')
         playmusic5.classList.remove('active')
         pausemusic5.classList.add('active')
+        playmusic6.classList.remove('active')
+        pausemusic6.classList.add('active')
     }
     if (pausemusic1.classList.contains('active')) {
         music1.pause()
@@ -63,6 +71,7 @@ playpause2.onclick = function () {
         music3.pause()
         music4.pause()
         music5.pause()
+        music6.pause()
         playmusic1.classList.remove('active')
         pausemusic1.classList.add('active')
         playmusic3.classList.remove('active')
@@ -71,6 +80,8 @@ playpause2.onclick = function () {
         pausemusic4.classList.add('active')
         playmusic5.classList.remove('active')
         pausemusic5.classList.add('active')
+        playmusic6.classList.remove('active')
+        pausemusic6.classList.add('active')
     }
     if (pausemusic2.classList.contains('active')) {
         music2.pause()
@@ -86,6 +97,7 @@ playpause3.onclick = function () {
         music1.pause()
         music4.pause()
         music5.pause()
+        music6.pause()
         playmusic2.classList.remove('active')
         pausemusic2.classList.add('active')
         playmusic1.classList.remove('active')
@@ -94,6 +106,8 @@ playpause3.onclick = function () {
         pausemusic4.classList.add('active')
         playmusic5.classList.remove('active')
         pausemusic5.classList.add('active')
+        playmusic6.classList.remove('active')
+        pausemusic6.classList.add('active')
     }
     if (pausemusic3.classList.contains('active')) {
         music3.pause()
@@ -109,6 +123,7 @@ playpause4.onclick = function () {
         music3.pause()
         music1.pause()
         music5.pause()
+        music6.pause()
         playmusic2.classList.remove('active')
         pausemusic2.classList.add('active')
         playmusic3.classList.remove('active')
@@ -117,6 +132,8 @@ playpause4.onclick = function () {
         pausemusic1.classList.add('active')
         playmusic5.classList.remove('active')
         pausemusic5.classList.add('active')
+        playmusic6.classList.remove('active')
+        pausemusic6.classList.add('active')
     }
     if (pausemusic4.classList.contains('active')) {
         music4.pause()
@@ -132,6 +149,7 @@ playpause5.onclick = function () {
         music2.pause()
         music3.pause()
         music4.pause()
+        music6.pause()
         playmusic2.classList.remove('active')
         pausemusic2.classList.add('active')
         playmusic3.classList.remove('active')
@@ -140,9 +158,37 @@ playpause5.onclick = function () {
         pausemusic4.classList.add('active')
         playmusic1.classList.remove('active')
         pausemusic1.classList.add('active')
+        playmusic6.classList.remove('active')
+        pausemusic6.classList.add('active')
     }
     if (pausemusic5.classList.contains('active')) {
         music5.pause()
+    }
+}
+
+playpause6.onclick = function () {
+    playmusic6.classList.toggle('active')
+    pausemusic6.classList.toggle('active')
+    if (playmusic6.classList.contains('active')) {
+        music6.play()
+        music1.pause()
+        music2.pause()
+        music3.pause()
+        music4.pause()
+        music5.pause()
+        playmusic2.classList.remove('active')
+        pausemusic2.classList.add('active')
+        playmusic3.classList.remove('active')
+        pausemusic3.classList.add('active')
+        playmusic4.classList.remove('active')
+        pausemusic4.classList.add('active')
+        playmusic1.classList.remove('active')
+        pausemusic1.classList.add('active')
+        playmusic5.classList.remove('active')
+        pausemusic5.classList.add('active')
+    }
+    if (pausemusic6.classList.contains('active')) {
+        music6.pause()
     }
 }
 
@@ -187,6 +233,12 @@ setInterval(() => {
         playmusic5.classList.toggle('active')
         pausemusic5.classList.toggle('active')
         music5.currentTime = 0.0
+    }
+
+    if (music6.currentTime == music6.duration) {
+        playmusic6.classList.toggle('active')
+        pausemusic6.classList.toggle('active')
+        music6.currentTime = 0.0
     }
 
     if (loadwindow.classList.contains('loaded') == false) {
